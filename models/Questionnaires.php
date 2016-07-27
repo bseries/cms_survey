@@ -19,13 +19,26 @@ namespace cms_survey\models;
 
 class Questionnaires extends \base_core\models\Base {
 
-	use \base_core\models\UserTrait;
-
 	protected $_actsAs = [
+		'base_core\extensions\data\behavior\RelationsPlus',
+		'base_core\extensions\data\behavior\Timestamp',
 		'base_core\extensions\data\behavior\Serializable' => [
 			'fields' => [
 				'positions' => 'json'
 			]
+		],
+		'base_core\extensions\data\behavior\Searchable' => [
+			'fields' => [
+				'User.number',
+				'User.name',
+			]
+		]
+	];
+
+	public $belongsTo = [
+		'User' => [
+			'to' => 'base_core\models\Users',
+			'key' => 'user_id'
 		]
 	];
 
@@ -47,10 +60,6 @@ class Questionnaires extends \base_core\models\Base {
 				continue;
 			}
 			$results[] = "{$key}: " . (is_array($value) ? implode(', ', $value) : $value);
-		}
-		if (!empty($entity->note)) {
-			$results[] = "Note: ";
-			$results[] = $entity->note;
 		}
 		return implode("\n", $results);
 	}

@@ -22,7 +22,7 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-Panes::register('users.questionnaires', [
+Panes::register('user.questionnaires', [
 	'title' => $t('Questionnaires', ['scope' => 'cms_survey']),
 	'url' => ['controller' => 'questionnaires', 'action' => 'index', 'library' => 'cms_survey', 'admin' => true],
 	'weight' => 60
