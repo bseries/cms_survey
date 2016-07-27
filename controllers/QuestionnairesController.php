@@ -15,14 +15,14 @@
  * License. If not, see http://atelierdisko.de/licenses.
  */
 
-namespace cms_survey\config;
+namespace cms_survey\controllers;
 
-use base_core\extensions\cms\Settings;
+class QuestionnairesController extends \base_core\controllers\BaseController {
 
-// Enables the ability to provide a source of the post.
-Settings::register('post.useSource', false);
-
-// Enables the promotion of posts.
-Settings::register('post.usePromotion', true);
+	use \base_core\controllers\AdminIndexTrait;
+	use \base_core\controllers\AdminAddTrait;
+	use \base_core\controllers\AdminEditTrait;
+	use \base_core\controllers\AdminDeleteTrait;
+}
 
 ?>

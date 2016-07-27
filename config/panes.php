@@ -22,10 +22,10 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-Panes::register('cms.posts', [
-	'title' => $t('Posts', ['scope' => 'cms_survey']),
-	'url' => ['controller' => 'posts', 'action' => 'index', 'library' => 'cms_survey', 'admin' => true],
-	'weight' => 40
+Panes::register('users.questionnaires', [
+	'title' => $t('Questionnaires', ['scope' => 'cms_survey']),
+	'url' => ['controller' => 'questionnaires', 'action' => 'index', 'library' => 'cms_survey', 'admin' => true],
+	'weight' => 60
 ]);
 
 ?>
