@@ -19,20 +19,20 @@ namespace cms_survey\config;
 
 use lithium\g11n\Message;
 use base_core\extensions\cms\Widgets;
-use cms_survey\models\Posts;
+use cms_survey\models\Questionnaires;
 
 extract(Message::aliases());
 
-Widgets::register('authoring',  function() use ($t) {
+Widgets::register('survey',  function() use ($t) {
 	return [
+		'title' => $t('Surveys', ['scope' => 'cms_survey']),
 		'data' => [
-			$t('Posts', ['scope' => 'cms_survey']) => Posts::find('count')
+			$t('Filled Out', ['scope' => 'cms_survey']) => Questionnaires::find('count')
 		]
 	];
 }, [
-	'type' => Widgets::TYPE_TABLE,
+	'type' => Widgets::TYPE_COUNTER,
 	'group' => Widgets::GROUP_DASHBOARD,
-	'weight' => Widgets::WEIGHT_HIGH
 ]);
 
 ?>
