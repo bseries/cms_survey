@@ -1,25 +1,14 @@
 {
-    "name": "atelierdisko/cms_survey",
+    "name": "bseries/cms_survey",
     "description": "Survey functionality for Bureau.",
-    "homepage": "https://atelierdisko.de",
     "type": "lithium-library",
     "license": "proprietary",
-    "authors": [
-        {
-          "name": "Atelier Disko",
-          "homepage": "https://atelierdisko.de"
-        }
-    ],
     "require": {
-        "atelierdisko/base_core": "1.5.*@dev",
-        "atelierdisko/cms_core": "1.5.*@dev",
         "atelierdisko/li3_flash_message": "1.*",
+        "bseries/base_core": "1.5.x-dev",
+        "bseries/cms_core": "1.5.x-dev",
         "composer/installers": "1.*@stable",
         "php": "^5.5 || ^7.0",
         "unionofrad/lithium": "^1.1"
-    },
-    "repositories": [
-      { "type": "vcs", "url": "git@code.disko.io:base_core.git" },
-      { "type": "vcs", "url": "git@code.disko.io:cms_core.git" }
-    ]
+    }
 }
