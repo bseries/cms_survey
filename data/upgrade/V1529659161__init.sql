@@ -4,4 +4,4 @@ CREATE TABLE `questionnaires` (
   `positions` text,
   `note` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB;
