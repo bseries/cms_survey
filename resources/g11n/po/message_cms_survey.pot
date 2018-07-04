@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Atelier Disko
+# This file is distributed under the same license as the cms_survey package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cms_survey 1.0\n"
+"Report-Msgid-Bugs-To: info@atelierdisko.de\n"
+"POT-Creation-Date: 2018-07-04 13:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: config/panes.php:17
+msgid "Questionnaires"
+msgstr ""
+
+#: config/widgets.php:19
+msgid "Surveys"
+msgstr ""
+
+#: config/widgets.php:21
+msgid "Filled Out"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:14
+msgid "untitled"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:15
+#: views/questionnaires/admin_index.html.php:30
+msgid "questionnaire"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:18
+msgid "has note"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:33
+#: views/questionnaires/admin_form.html.php:37
+#: views/questionnaires/admin_index.html.php:37
+msgid "User"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:46
+msgid "Number"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:51
+msgid "Name"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:56
+msgid "Email"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:61
+msgid "Signed up"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:67
+msgid "open user"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:81
+msgid "Answers"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:85
+#: views/questionnaires/admin_form.html.php:93
+msgid "Visible to user."
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:90
+msgid "Note"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:101
+msgid "delete"
+msgstr ""
+
+#: views/questionnaires/admin_form.html.php:107
+msgid "save"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:13
+msgid "questionnaires"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:38
+msgid "#answers"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:39
+msgid "note?"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:40
+msgid "Modified"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:45
+msgid "Filter"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:63
+msgid "open"
+msgstr ""
+
+#: views/questionnaires/admin_index.html.php:68
+msgid "No items available, yet."
+msgstr ""
